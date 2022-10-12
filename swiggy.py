@@ -65,11 +65,11 @@ for i in range(9):
 	print(offers)
 	#print(links)
 	print(address)
-	# header = ['Restaurants', 'Cuisine', 'Ratings', 'Delivery Time','Cost for 2', 'Offers', 'Address']
-	# indices = [i for i in range(1, len(restaurants)+1)]
-	# all_rests = zip(restaurants, cuisine, ratings, delivery_time, cost, offers, address)
-	# dt = pd.DataFrame(list(all_rests), columns = header, index = indices)
-	# dt.to_csv('Top Restaurants in ' + city +'.csv')
-	# print(dt)
+	header = ['Restaurants', 'Cuisine', 'Ratings', 'Delivery Time','Cost for 2', 'Offers', 'Address']
+	indices = [i for i in range(1, len(restaurants)+1)]
+	all_rests = zip(restaurants, cuisine, ratings, delivery_time, cost, offers, address)
+	dt = pd.DataFrame(list(all_rests), columns = header, index = indices)
+	dt.to_csv('Top Restaurants in ' + city +'.csv')
+	print(dt)
 
 
